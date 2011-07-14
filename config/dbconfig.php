@@ -14,7 +14,7 @@ return array (
 	'db' => 
 	array (
 		'table' => 'config',
-		'installed' => true,
+		'installed' => false,
 	),
 );
 
