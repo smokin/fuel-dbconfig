@@ -35,7 +35,7 @@ class DbConfig {
 
 		static::$items[$group] = json_decode($config['value'], true);
 
-		if (is_array(static::$items[$key]))
+		if (is_array(static::$items[$group]))
 		{
 			static::$loaded_keys[] = $key;
 			return true;
