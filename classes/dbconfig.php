@@ -28,7 +28,12 @@ class DbConfig {
 			return false;
 		}
 
-		static::$items[$key] = json_decode($config['value'], true);
+		if ( ! $group)
+		{
+			$group = $key;
+		}
+
+		static::$items[$group] = json_decode($config['value'], true);
 
 		if (is_array(static::$items[$key]))
 		{
